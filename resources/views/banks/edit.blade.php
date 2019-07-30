@@ -14,7 +14,6 @@
         </div>
         <br /> 
         @endif
-        {{-- FIXME: maybe error in next line --}}
         <form method="post" action="{{ route('banks.update', $bank->id) }}"> 
             @method('PATCH') 
             @csrf
@@ -24,7 +23,6 @@
                     <input type="text" class="form-control" name="ifsc" value="{{$bank->ifsc}}"/>
                 </div>
       
-                {{-- TODO: make it dropdown --}}
                 <div class="form-group">
                     <label for="bank_name">Bank Name:</label>
                     <input type="text" class="form-control" name="bank_name" value = "{{ $bank->bank_name }}"/>

@@ -1,9 +1,3 @@
-{{-- 1. search bar
-3. add a new bank
-3. logout->welcome page --}}
-
-
-
 
 @extends('base')
 
@@ -63,23 +57,6 @@
 </div>
 <div class="row" style="margin: 19px;">
     <div class="col-md-3"><h1>BankBook Search</h1></div>
-    {{-- <div class="dropdown">
-        {{-- FIXME: dropdown button not working --}}
-        {{-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Select Bank
-        </button> --}}
-        {{-- TODO: make the list dynamic --}}
-        {{-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> --}}
-                {{-- @foreach($bank as $bank)
-                  <a class="dropdown-item" >{{$bank->bank_name}}</a>
-                @endforeach --}}
-            {{-- <a class="dropdown-item" href="#">SBI</a>
-            <a class="dropdown-item" href="#">HDFC</a>
-            <a class="dropdown-item" href="#">ICICI</a>
-        </div>
-    </div> --}}
-    
-    {{-- TODO: search by branch --}}
     <div class="col-md-4">
         <form action="/search" method="GET">
             <div class="input-group mb-3">
@@ -114,12 +91,3 @@
 </div>
 
 
-
-
-{{-- <div>
-    <a style="margin: 19px;" href="{{ route('banks.create')}}" class="btn btn-primary">Add A Bank</a>
-    <a style="margin: 19px;" href="{{ route('banks.index')}}" class="btn btn-warning">Search A Bank</a> 
-
-    {{-- TODO: add query --}}
-    {{-- <a style="margin: 19px;" href="{{ route('banks.query')}}" class="btn btn-warning">Search A Bank</a>  --}}
-{{-- </div>    --}} 

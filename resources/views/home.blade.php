@@ -36,7 +36,6 @@
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Select Bank
         </button>
-        {{-- TODO: make the list dynamic --}}
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#">SBI</a>
             <a class="dropdown-item" href="#">HDFC</a>
@@ -54,7 +53,6 @@
         </form>
     </div>
     <h3>OR</h3>
-    {{-- TODO: search by branch --}}
     <div class="col-md-3">
         <form action="/searchByBranch" method="GET">
             <div class="input-group">

@@ -86,9 +86,6 @@
                 </div>
                 <div><span>It's paid and always will be.</span></div>
                 <br><br>
-                {{-- <div class="links">
-                    <a href="/home/banks">Enter</a>
-                </div> --}}
             </div>
         </div>
     </body>
